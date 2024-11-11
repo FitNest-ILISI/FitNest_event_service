@@ -3,7 +3,10 @@ import jakarta.persistence.*;
 import lombok.*;
 
 
-@Entity @Getter @NoArgsConstructor
+@Builder
+@AllArgsConstructor
+@Entity @Getter
+@NoArgsConstructor
 @Setter
 public class SportCategory {
 
