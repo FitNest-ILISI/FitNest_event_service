@@ -1,27 +1,19 @@
 package org.ilisi.event;
 
-import com.thoughtworks.xstream.converters.time.LocalDateConverter;
-import org.ilisi.event.entities.Event;
-import org.ilisi.event.entities.SportCategory;
-import org.ilisi.event.repository.EventRepository;
-import org.ilisi.event.repository.SportCategoryRepository;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.context.annotation.Bean;
-
-import java.time.LocalDate;
-import java.util.Date;
-import java.util.UUID;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableFeignClients
+@EnableJpaRepositories
 public class EventServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EventServiceApplication.class, args);
 	}
+
 
 /*
 	@Bean

@@ -5,8 +5,9 @@ import lombok.*;
 
 @Builder
 @AllArgsConstructor
-@Entity @Getter
+
 @NoArgsConstructor
+@Entity @Getter
 @Setter
 public class SportCategory {
 
